@@ -1,0 +1,67 @@
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.switch:{
+  width:;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+    /*background-image:url("https://cdn2.vectorstock.com/i/1000x1000/20/56/full-color-spectrum-rainbow-polygon-triangular-vector-10462056.jpg");*/
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 53px;
+  width: 53px;
+  left: 4px;
+  bottom: 3px;
+  background-image:url("https://ru.iwall365.com/iPhoneWallpaper/640x960/1307/Abstract-colors_640x960_iPhone_4_wallpaper.jpg");
+    transition: 2s;
+}
+.slider:after{
+
+}
+input:checked + .slider {
+  background-image:url("");
+  background-color: orange;
+   /* background-image:url("https://cdn3.vectorstock.com/i/1000x1000/34/72/spectrum-color-full-rainbow-polygon-triangular-vector-9203472.jpg");*/
+
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px red;
+}
+
+input:checked + .slider:before {
+  transform: translateX(218px);
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFzFDKItrCWUDCChzNv3zJ_3sNS_LinGiUWIsSgVfn9xfGl-H");
+
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
